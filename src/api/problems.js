@@ -1,9 +1,4 @@
-import SAMPLE from '../data/problems.json';
-
 export const getProblemList = () => {
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            resolve(SAMPLE);
-        }, 1000);
-    });
+    return fetch(`http://localhost:8000/problems`)
+    .then(res => res.json());
 };

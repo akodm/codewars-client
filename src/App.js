@@ -39,7 +39,7 @@ function App() {
         }
 
         getProblems();
-    });
+    }, []);
 
     return (
         <div className="App">
