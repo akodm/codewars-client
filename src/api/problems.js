@@ -1,5 +1,5 @@
 const API_URL = process.env.NODE_ENV === 'production'
-? "http://daelimcodewars-env.eba-tqivexwz.us-east-1.elasticbeanstalk.com"
+? process.env.SERVER_URL
 : "http://localhost:8000";
 
 export const getProblemList = () => {
